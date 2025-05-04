@@ -64,15 +64,36 @@ export function Navbar() {
           <StandardItem title={"Home"} href={"/home"}></StandardItem>
           <div className="flex flex-row space-x-1">
             <MenuItem setActive={setActive} active={active} item="Features">
-              <div className="flex flex-col space-y-4 text-sm">
-                <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                <HoveredLink href="/interface-design">
-                  Interface Design
-                </HoveredLink>
-                <HoveredLink href="/seo">
-                  Search Engine Optimization
-                </HoveredLink>
-                <HoveredLink href="/branding">Branding</HoveredLink>
+              <div className="pt-1 pb-4">
+                <p className="text-[#929098]">Features</p>
+              </div>
+              <div className="grid grid-cols-2 gap-x-8 text-sm">
+                <div className="flex flex-col space-y-4">
+                  <HoveredLink href="/features/automated-annotation">
+                    Automated Annotations
+                  </HoveredLink>
+                  <HoveredLink href="/features/fewshot">
+                    Few Shot Visual Prompting
+                  </HoveredLink>
+                  <HoveredLink href="/features/visual-model-deployment">
+                    Visual Model Deployment
+                  </HoveredLink>
+                </div>
+                {/* Second Column Container */}
+                <div className="flex flex-col space-y-4">
+                  {/* <div>
+                    <p className="text-white">Features</p>
+                  </div> */}
+                  <HoveredLink href="/features/text-annotations">
+                    Text Annotations
+                  </HoveredLink>
+                  <HoveredLink href="/features/llm-finetuning">
+                    LLM Fine Tuning
+                  </HoveredLink>
+                  <HoveredLink href="/features/llm-deployment">
+                    LLM Deployment
+                  </HoveredLink>
+                </div>
               </div>
             </MenuItem>
             <div className="my-auto pt-1">
@@ -81,6 +102,9 @@ export function Navbar() {
           </div>
           <div className="flex flex-row">
             <MenuItem setActive={setActive} active={active} item="Solutions">
+              <div className="pt-1 pb-4">
+                <p className="text-[#929098]">Industries</p>
+              </div>
               <div className="flex flex-col space-y-4 text-sm">
                 <div className="grid grid-cols-2 gap-8">
                   <div className="flex flex-col space-y-4">
@@ -112,15 +136,21 @@ export function Navbar() {
           </div>
           <div className="flex flex-row space-x-1">
             <MenuItem setActive={setActive} active={active} item="Resources">
-              <div className="flex flex-col space-y-4 text-sm">
-                <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                <HoveredLink href="/interface-design">
-                  Interface Design
-                </HoveredLink>
-                <HoveredLink href="/seo">
-                  Search Engine Optimization
-                </HoveredLink>
-                <HoveredLink href="/branding">Branding</HoveredLink>
+              <div className="pt-1 pb-4">
+                <p className="text-[#929098]">Resources</p>
+              </div>
+              <div className="grid grid-cols-2 gap-x-8 text-sm">
+                <div className="flex flex-col space-y-4">
+                  <HoveredLink href="/web-dev">Blog</HoveredLink>
+                  <HoveredLink href="/web-dev">Docs</HoveredLink>
+                  <HoveredLink href="/web-dev">Videos</HoveredLink>
+                </div>
+                <div className="flex flex-col space-y-4">
+                  <HoveredLink href="/web-dev">News Articles</HoveredLink>
+                  <HoveredLink href="/web-dev">
+                    Awards and Recognition
+                  </HoveredLink>
+                </div>
               </div>
             </MenuItem>
             <div className="my-auto pt-1">
