@@ -3,42 +3,47 @@ import { Button } from "../ui/button";
 
 interface FeaturesHeroProps {
   title: string;
+  description: string;
+  youtubeUrl?: string;
 }
 
-const FeaturesHero = ({ title }: FeaturesHeroProps) => {
+const FeaturesHero = ({ title, description, youtubeUrl }: FeaturesHeroProps) => {
   return (
-    <div className="py-20">
-      <div className="mx-15 flex flex-col">
-        <div className="pb-15">
+    <div className="py-20 max-w-[1120px] mx-auto">
+      <div className="flex flex-col">
+        <div className="mb-15">
           <Button className="rounded-full bg-[#D9D9D9] text-[#4C00FE] hover:bg-[#D9D9D9] hover:text-[#4C00FE]">
             {title}
           </Button>
         </div>
-        <div className="flex flex-row gap-25 pb-10">
+        <div className="flex flex-row gap-10 mb-10">
           {/* Heading */}
-          <div className="max-w-[290px]">
-            <h1 className="font-bold text-4xl w-full">
-              Lorem ipsum dolor sit amet consectetur. Integer augue.
+          <div className="w-[290px] flex-shrink-0">
+            <h1 className="font-bold text-4xl">
+              {title}
             </h1>
           </div>
           {/* Description */}
-          <div className="flex flex-col justify-between align-middle w-full">
-            {/* Text */}
-            <div className="h-full mt-5">
-              <p>
-                Leverage our Gen AI powered text prompting—converting natural
-                language into accurate labels for detection and segmentation
-                tasks. Combining automation with human validation, it delivers
-                faster and more reliable results than manual methods. Best
-                suited for common objects in general contexts.
-              </p>
+          <div className="flex flex-col justify-between flex-grow">
+            <div className="mt-5">
+              <p className="text-lg">{description}</p>
             </div>
-            <Button className="border w-[120px] bg-[#4C00FE] text-white hover:bg-white hover:border hover:border-[#4C00FE] hover:text-[#4C00FE] rounded-full">
+            <Button className="w-[120px] bg-[#4C00FE] text-white hover:bg-white hover:border hover:border-[#4C00FE] hover:text-[#4C00FE] rounded-full">
               Get Started
             </Button>
           </div>
         </div>
-        <div className="w-[1120px] h-[505px] bg-[#D9D9D9] rounded-lg"></div>
+        {youtubeUrl ? (
+          <iframe
+            className="w-full aspect-video rounded-lg"
+            src={youtubeUrl}
+            title="Feature Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        ) : (
+          <div className="w-full aspect-video bg-[#D9D9D9] rounded-lg"></div>
+        )}
       </div>
     </div>
   );

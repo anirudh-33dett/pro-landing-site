@@ -3,7 +3,11 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 
-export default function CTA() {
+interface CTAProps {
+  ctaLink?: string;
+}
+
+export default function CTA({ ctaLink }: CTAProps) {
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -46,6 +50,14 @@ export default function CTA() {
     }
   };
 
+  const handleGetStarted = () => {
+    if (ctaLink) {
+      window.location.href = ctaLink;
+    } else {
+      router.push("/pricing");
+    }
+  };
+
   return (
     <div className="w-full px-8 py-15 h-full bg-white">
       <div
@@ -75,7 +87,7 @@ export default function CTA() {
 
           <div className="flex flex-wrap gap-4 justify-center">
             <Button
-              onClick={() => router.push("/pricing")}
+              onClick={handleGetStarted}
               variant="secondary"
               className="bg-white text-purple-700 hover:bg-white/30 hover:text-white"
             >
