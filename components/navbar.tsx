@@ -141,9 +141,9 @@ export function Navbar() {
               </div>
               <div className="grid grid-cols-2 gap-x-8 text-sm">
                 <div className="flex flex-col space-y-4">
-                  <HoveredLink href="/web-dev">Blog</HoveredLink>
-                  <HoveredLink href="/web-dev">Docs</HoveredLink>
-                  <HoveredLink href="/web-dev">Videos</HoveredLink>
+                  <HoveredLink href="/resources/blogs">Blog</HoveredLink>
+                  <HoveredLink href="/resources/docs">Docs</HoveredLink>
+                  <HoveredLink href="/resources/showcase">Showcase</HoveredLink>
                 </div>
                 <div className="flex flex-col space-y-4">
                   <HoveredLink href="/web-dev">News Articles</HoveredLink>
