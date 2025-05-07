@@ -7,19 +7,21 @@ import KnowMore from "@/components/hero/knowMore";
 import PlatformHighlights from "@/components/hero/platformHighlights";
 import ProductHighlights from "@/components/hero/productHighlights";
 import ROI from "@/components/hero/roi";
+import ScrollArrow from "@/components/scrollArrow";
 
 export default function Home() {
   return (
     <div>
-      <Hero></Hero>
-      <ProductHighlights></ProductHighlights>
+      <Hero />
+      <ProductHighlights />
       {/* <AdvantageHighlights></AdvantageHighlights> */}
-      <ROI></ROI>
-      <FeatureHighlights></FeatureHighlights>
-      <PlatformHighlights></PlatformHighlights>
-      <IndustryApplicationHighlights></IndustryApplicationHighlights>
-      <KnowMore></KnowMore>
-      <CTA></CTA>
+      <ROI />
+      <FeatureHighlights />
+      <PlatformHighlights />
+      <IndustryApplicationHighlights />
+      <KnowMore />
+      <CTA />
+      <ScrollArrow /> {/* Add the ScrollArrow component */}
     </div>
   );
 }

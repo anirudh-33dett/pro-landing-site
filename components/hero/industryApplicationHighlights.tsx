@@ -106,21 +106,20 @@ const IndustryApplicationHighlights = () => {
       <div className="relative z-10 mx-13">
         <div className="mb-4">
           <p className="text-[16px] text-primary font-bold">
-            PRODUCT HIGHLIGHT
+            INDUSTRY APPLICATIONS
           </p>
         </div>
         {/* ActualTitle */}
         <div className="mb-4">
           <h1 className="text-[48px] font-medium text-white">
-            Lorem ipsum dolor sit amet consectetur. Integer augue.
+            Built for Every Industry, Ready for Your Use Case.
           </h1>
         </div>
         <div className="pb-10">
           <p className="text-xl max-w-full text-white">
-            Lorem ipsum dolor sit amet consectetur. Arcu fames nunc pretium
-            viverra turpis praesent. Magnis donec dui eu sit viverra vestibulum
-            eu. Dignissim suspendisse mattis sagittis iaculis in in facilisi
-            turpis.
+            From pharmaceuticals to finance, QpiAI Pro powers AI transformation
+            across sectors. Explore how our platform adapts to domain-specific
+            challenges with precision, speed, and scale.
           </p>
         </div>
 
@@ -132,24 +131,27 @@ const IndustryApplicationHighlights = () => {
                 {industryCards.map((card, index) => (
                   <div
                     key={card.title}
-                    className={`relative flex-shrink-0 mx-2 rounded-lg overflow-hidden transition-all duration-300 ease-out shadow-xl ${
+                    className={`relative flex-shrink-0 mx-2 rounded-lg overflow-hidden transition-all duration-300 ease-out shadow-xl border-3 border-white ${
                       index === selectedIndex
                         ? "scale-100"
                         : "scale-90 opacity-90"
                     }`}
                     style={{ width: "380px", height: "400px" }}
                   >
-                    <div className="bg-white/50 h-14 flex items-center px-5 justify-center text-center ">
-                      <h3 className="font-medium text-lg text-gray-800 dark:text-white">
-                        {card.title}
-                      </h3>
-                    </div>
-                    <div className="h-full w-full">
+                    {/* Image covers the entire card */}
+                    <div className="absolute inset-0 w-full h-full">
                       <img
                         src={card.image}
                         alt={card.title}
                         className="w-full h-full object-cover"
                       />
+                    </div>
+
+                    {/* Title overlay with blur effect */}
+                    <div className="absolute top-0 left-0 right-0 bg-black/40 backdrop-blur-md h-14 flex items-center px-5 justify-center text-center z-10">
+                      <h3 className="font-medium text-lg text-white">
+                        {card.title}
+                      </h3>
                     </div>
                   </div>
                 ))}
@@ -157,71 +159,49 @@ const IndustryApplicationHighlights = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <button
-              className={`absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 shadow-lg flex items-center justify-center text-gray-800 transition-all z-20 ${
-                prevBtnEnabled
-                  ? "opacity-100 cursor-pointer"
-                  : "opacity-50 cursor-not-allowed"
-              }`}
-              onClick={scrollPrev}
-              disabled={!prevBtnEnabled}
-              aria-label="Previous slide"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+            {prevBtnEnabled && (
+              <button
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 shadow-lg flex items-center justify-center text-gray-800 transition-all z-20 opacity-100 cursor-pointer"
+                onClick={scrollPrev}
+                aria-label="Previous slide"
               >
-                <path d="M15 18l-6-6 6-6" />
-              </svg>
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+            )}
 
-            <button
-              className={`absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 shadow-lg flex items-center justify-center text-gray-800 transition-all z-20 ${
-                nextBtnEnabled
-                  ? "opacity-100 cursor-pointer"
-                  : "opacity-50 cursor-not-allowed"
-              }`}
-              onClick={scrollNext}
-              disabled={!nextBtnEnabled}
-              aria-label="Next slide"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+            {nextBtnEnabled && (
+              <button
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 shadow-lg flex items-center justify-center text-gray-800 transition-all z-20 opacity-100 cursor-pointer"
+                onClick={scrollNext}
+                aria-label="Next slide"
               >
-                <path d="M9 18l6-6-6-6" />
-              </svg>
-            </button>
-
-            {/* Dots Navigation */}
-            <div className="flex justify-center gap-2 mt-6">
-              {scrollSnaps.map((_, index) => (
-                <button
-                  key={index}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === selectedIndex
-                      ? "bg-[#4c00fe]"
-                      : "bg-white/50 hover:bg-white/70"
-                  }`}
-                  onClick={() => scrollTo(index)}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            )}
           </div>
         )}
       </div>

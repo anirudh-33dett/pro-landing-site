@@ -230,16 +230,17 @@ const FeatureHighlights = () => {
           {/* ActualTitle */}
           <div className="mb-4">
             <h1 className="text-[48px] font-medium">
-              Lorem ipsum dolor sit amet consectetur. Integer augue.
+              Revolutionary Features that Redefine Enterprise AI
             </h1>
           </div>
           {/* Description */}
           <div className="pb-10">
             <p className="text-xl max-w-full">
-              Lorem ipsum dolor sit amet consectetur. Arcu fames nunc pretium
-              viverra turpis praesent. Magnis donec dui eu sit viverra
-              vestibulum eu. Dignissim suspendisse mattis sagittis iaculis in in
-              facilisi turpis.
+              Discover breakthrough capabilities that accelerate every stage of
+              your AI pipeline—from automated annotations to real-time LLM
+              deployment. Built for speed, scale, and simplicity, these
+              innovations empower teams to move from idea to production with
+              unmatched efficiency.
             </p>
           </div>
           {/* Grid */}

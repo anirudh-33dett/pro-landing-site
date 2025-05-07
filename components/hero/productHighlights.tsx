@@ -44,28 +44,33 @@ const GridItem = ({ icon, title, description }: GridItemProps) => {
 
 const ProductHighlights = () => {
   return (
-    <div className="bg-[#F4F8FF] px-6 md:px-10 lg:px-12 py-10 space-y-6">
+    <div
+      className="bg-[#F4F8FF] px-6 md:px-10 lg:px-12 py-10 space-y-6"
+      id="id1"
+    >
       <div className="mx-27">
         <div className="mb-4">
-          <p className="text-[16px] text-primary font-bold">USECASES</p>
+          <p className="text-[16px] text-primary font-bold">
+            PRODUCT HIGHLIGHTS
+          </p>
         </div>
         {/* ActualTitle */}
         <div className="mb-4">
           <h1 className="text-[48px] font-medium">
-            Lorem ipsum dolor sit amet consectetur. Integer augue.
+            Unlock Enterprise-Grade AI: Fast, Scalable & No-Code
           </h1>
         </div>
         {/* Description */}
         <div className="pb-10">
-          <p className="text-xl max-w-full">
-            Lorem ipsum dolor sit amet consectetur. Arcu fames nunc pretium
-            viverra turpis praesent. Magnis donec dui eu sit viverra vestibulum
-            eu. Dignissim suspendisse mattis sagittis iaculis in in facilisi
-            turpis.
+          <p className="text-xl max-w-full " id="id2">
+            Build, fine-tune, and deploy advanced AI with zero code. QpiAI Pro
+            unifies AutoML, GenAI, and MLOps in one scalable
+            platform—accelerating enterprise AI with automation, intuitive
+            design, and seamless deployment.
           </p>
         </div>
         {/* Grid */}
-        <div className="mt-6 pb-5">
+        <div className="mt-6 pb-5" id="id3">
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <GridItem
               icon={

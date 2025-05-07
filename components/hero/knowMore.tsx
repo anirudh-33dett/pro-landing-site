@@ -48,15 +48,14 @@ const KnowMore = () => {
         </div>
         <div className="mb-4">
           <h1 className="text-[48px] font-medium ">
-            Lorem ipsum dolor sit amet consectetur. Integer augue.
+            Milestones That Shape the Future of AI and Quantum
           </h1>
         </div>
         <div className="pb-10">
           <p className="text-xl max-w-full ">
-            Lorem ipsum dolor sit amet consectetur. Arcu fames nunc pretium
-            viverra turpis praesent. Magnis donec dui eu sit viverra vestibulum
-            eu. Dignissim suspendisse mattis sagittis iaculis in in facilisi
-            turpis.
+            From groundbreaking quantum hardware to scalable AI platforms, QpiAI
+            continues to lead innovation. Explore our latest achievements and
+            how we’re transforming global tech landscapes.
           </p>
         </div>
         {/* BentoGrid */}
@@ -65,7 +64,7 @@ const KnowMore = () => {
           {mainArticle.map((article, index) => (
             <div
               key={index}
-              className="flex flex-col border rounded-lg shadow-lg overflow-hidden h-[736px]"
+              className="flex flex-col rounded-lg shadow-xl overflow-hidden h-[736px] border-3 border-white"
             >
               {/* Image */}
               <div className="h-64 w-full relative">
@@ -102,7 +101,7 @@ const KnowMore = () => {
             {secondaryArticles.map((article, index) => (
               <div
                 key={index}
-                className="flex flex-row border rounded-lg shadow-sm overflow-hidden flex-1"
+                className="flex flex-row border-3 border-white rounded-lg shadow-xl overflow-hidden flex-1"
               >
                 {/* Image */}
                 <div className="w-1/3 relative">
