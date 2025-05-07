@@ -38,9 +38,9 @@ export default function ROI() {
         boxShadow: "0 8px 32px rgba(0, 0, 0, 0.1)",
       }}
     >
-      <div className="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <ROICard number="600" label="faster" description="Annotations" />
+      {/* <div className="absolute inset-0 bg-white/10 backdrop-blur-sm"></div> */}
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 mx-11">
+        <ROICard number="700" label="faster" description="Annotations" />
         <ROICard
           number="10"
           label="higher productivity"

@@ -103,32 +103,30 @@ const IndustryApplicationHighlights = () => {
       }}
     >
       <div className="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
-      <div className="relative z-10">
-        <div className="pb-10">
-          <p className="text-primary font-semibold">Game Changing Features</p>
+      <div className="relative z-10 mx-13">
+        <div className="mb-4">
+          <p className="text-[16px] text-primary font-bold">
+            PRODUCT HIGHLIGHT
+          </p>
         </div>
         {/* ActualTitle */}
-        <div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl">
-            Benefits of
-            <span className="gradient-text ml-4 pb-4">Qpi AI Pro</span>.
+        <div className="mb-4">
+          <h1 className="text-[48px] font-medium text-white">
+            Lorem ipsum dolor sit amet consectetur. Integer augue.
           </h1>
         </div>
-        <div className="pt-5">
-          <p className="text-sm max-w-full">
-            QpiAI Pro offers a unified platform to accelerate AI workflows from
-            data annotation and model training to scalable deployment. It
-            emphasizes no-code tools, automation, and cost efficiency, catering
-            to enterprises seeking faster development cycles and reduced
-            operational costs. The platform covers vision and language AI with
-            features designed for collaboration and high-performance output
-            across different environments (cloud, on-premise, hybrid).
+        <div className="pb-10">
+          <p className="text-xl max-w-full text-white">
+            Lorem ipsum dolor sit amet consectetur. Arcu fames nunc pretium
+            viverra turpis praesent. Magnis donec dui eu sit viverra vestibulum
+            eu. Dignissim suspendisse mattis sagittis iaculis in in facilisi
+            turpis.
           </p>
         </div>
 
         {/* Carousel */}
         {mounted && (
-          <div className="relative w-full mt-10 mb-16">
+          <div className="relative w-full mb-16">
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex py-10">
                 {industryCards.map((card, index) => (

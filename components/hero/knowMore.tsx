@@ -41,19 +41,18 @@ const secondaryArticles = [
 const KnowMore = () => {
   return (
     <div className="py-10 bg-white">
-      <div className="mx-15">
-        <div className="pb-10">
-          <p className="text-primary font-semibold">Know More</p>
-        </div>
+      <div className="mx-27">
         {/* ActualTitle */}
-        <div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl">
-            Know more about
-            <span className="gradient-text ml-4 pb-4">Qpi AI Pro</span>.
+        <div className="mb-4">
+          <p className="text-[16px] text-primary font-bold">OUR ACHIEVEMENTS</p>
+        </div>
+        <div className="mb-4">
+          <h1 className="text-[48px] font-medium ">
+            Lorem ipsum dolor sit amet consectetur. Integer augue.
           </h1>
         </div>
-        <div className="pb-10 pt-5">
-          <p className="text-sm max-w-full">
+        <div className="pb-10">
+          <p className="text-xl max-w-full ">
             Lorem ipsum dolor sit amet consectetur. Arcu fames nunc pretium
             viverra turpis praesent. Magnis donec dui eu sit viverra vestibulum
             eu. Dignissim suspendisse mattis sagittis iaculis in in facilisi
@@ -66,7 +65,7 @@ const KnowMore = () => {
           {mainArticle.map((article, index) => (
             <div
               key={index}
-              className="flex flex-col h-full border rounded-lg shadow-sm overflow-hidden"
+              className="flex flex-col border rounded-lg shadow-lg overflow-hidden h-[736px]"
             >
               {/* Image */}
               <div className="h-64 w-full relative">

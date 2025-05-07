@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <Hero></Hero>
       <ProductHighlights></ProductHighlights>
-      <AdvantageHighlights></AdvantageHighlights>
+      {/* <AdvantageHighlights></AdvantageHighlights> */}
       <ROI></ROI>
       <FeatureHighlights></FeatureHighlights>
       <PlatformHighlights></PlatformHighlights>

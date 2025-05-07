@@ -27,15 +27,14 @@ const PlatformHighlights = () => {
 
   return (
     <div className="bg-[#F4F8FF] px-6 md:px-10 lg:px-12 py-10">
-      <div className="mx-15">
+      <div className="mx-27">
         <div className="pb-10">
-          <p className="text-primary font-semibold">Access Platform</p>
+          <p className="text-[16px] text-primary font-bold">ACCESS PLATFORM</p>
         </div>
         {/* ActualTitle */}
-        <div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl">
-            Deployment Options of
-            <span className="gradient-text ml-4 pb-4">Qpi AI Pro</span>.
+        <div className="mb-4">
+          <h1 className="text-[48px] font-medium">
+            Lorem ipsum dolor sit amet consectetur. Integer augue.
           </h1>
         </div>
         {/* Content */}
@@ -44,7 +43,7 @@ const PlatformHighlights = () => {
             {deploymentOptions.map((option, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full"
+                className="bg-white rounded-lg shadow-md p-6 flex flex-col h-[410px]"
               >
                 <h3 className="text-xl font-semibold mb-4 text-center">
                   {option.title}
@@ -56,8 +55,8 @@ const PlatformHighlights = () => {
                   <button
                     className={`px-6 py-2 rounded-full ${
                       option.buttonAction
-                        ? "bg-purple-600 text-white"
-                        : "bg-purple-600 text-white"
+                        ? "bg-[#4c00fe] hover:bg-white border hover:border hover:border-[#4c00fe] hover:text-[#4c00fe] rounded-full text-white"
+                        : "bg-[#4c00fe] hover:bg-white border hover:border hover:border-[#4c00fe] hover:text-[#4c00fe] rounded-full text-white"
                     }`}
                   >
                     {option.buttonText}

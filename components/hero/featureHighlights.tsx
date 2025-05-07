@@ -142,7 +142,8 @@ const FeatureHighlightContent = ({
   return (
     <div className="w-full h-auto p-4 md:p-8 font-sans">
       <div className="flex flex-col lg:flex-row gap-8">
-        <div className="flex-1 flex flex-col h-full">
+        {/* Content div - adjust height to match image */}
+        <div className="w-full h-auto lg:h-[452px] bg-transparent p-6 rounded-lg flex flex-col overflow-hidden">
           <div className="mb-6">
             <h1 className="text-3xl font-bold mb-3 text-gray-800">{title}</h1>
             <p className="mt-2 text-gray-600 text-base">{description}</p>
@@ -174,13 +175,14 @@ const FeatureHighlightContent = ({
             </li>
           </ul>
           <div className="mt-6">
-            <Button className="rounded-full border boder-[#4c00fe] bg-[#4c00fe] text-white hover:text-[#4c00fe] hover:bg-white hover:border hover:border-[#4c00fe] ">
+            <Button className="bg-[#4c00fe] hover:bg-white border hover:border hover:border-[#4c00fe] hover:text-[#4c00fe] rounded-full py-4 px-5 h-[45px] text-[16px]">
               Explore
             </Button>
           </div>
         </div>
 
-        <div className="w-full lg:w-[560px] lg:h-[452px] h-[300px] bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+        {/* Image container - fixed height and proper background */}
+        <div className="w-full lg:w-[560px] h-[452px] rounded-lg flex items-center justify-center overflow-hidden bg-gray-100">
           {imageUrl ? (
             <img
               src={imageUrl}
@@ -192,7 +194,9 @@ const FeatureHighlightContent = ({
               }
             />
           ) : (
-            <span className="text-gray-500">Image Area</span>
+            <div className="text-gray-500 bg-gray-200 h-full w-full flex items-center justify-center">
+              Image Area
+            </div>
           )}
         </div>
       </div>
@@ -217,27 +221,25 @@ const FeatureHighlights = () => {
   return (
     <div className="bg-[#F4F8FF] h-full w-full">
       <div className="px-6 md:px-10 lg:px-12 py-10 space-y-6">
-        <div className="mx-15">
-          <div className="pb-10">
-            <p className="text-primary font-semibold">Game Changing Features</p>
+        <div className="mx-27">
+          <div className="mb-4">
+            <p className="text-[16px] text-primary font-bold">
+              GAME CHANGING FEATURES
+            </p>
           </div>
           {/* ActualTitle */}
-          <div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl">
-              Benefits of
-              <span className="gradient-text ml-4 pb-4">Qpi AI Pro</span>.
+          <div className="mb-4">
+            <h1 className="text-[48px] font-medium">
+              Lorem ipsum dolor sit amet consectetur. Integer augue.
             </h1>
           </div>
           {/* Description */}
           <div className="pb-10">
-            <p className="text-sm max-w-full">
-              QpiAI Pro offers a unified platform to accelerate AI workflows
-              from data annotation and model training to scalable deployment. It
-              emphasizes no-code tools, automation, and cost efficiency,
-              catering to enterprises seeking faster development cycles and
-              reduced operational costs. The platform covers vision and language
-              AI with features designed for collaboration and high-performance
-              output across different environments (cloud, on-premise, hybrid).
+            <p className="text-xl max-w-full">
+              Lorem ipsum dolor sit amet consectetur. Arcu fames nunc pretium
+              viverra turpis praesent. Magnis donec dui eu sit viverra
+              vestibulum eu. Dignissim suspendisse mattis sagittis iaculis in in
+              facilisi turpis.
             </p>
           </div>
           {/* Grid */}
@@ -249,37 +251,37 @@ const FeatureHighlights = () => {
               <TabsList className="w-full h-full bg-transparent border-none shadow-none">
                 <TabsTrigger
                   value="Automated Annotations"
-                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE]"
+                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE] text-[16px] data-[state=active]:text-[16px]"
                 >
                   Automated Annotations
                 </TabsTrigger>
                 <TabsTrigger
                   value="Few Shot Visual Prompting"
-                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE]"
+                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE] text-[16px] data-[state=active]:text-[16px]"
                 >
                   Few Shot Visual Prompting
                 </TabsTrigger>
                 <TabsTrigger
                   value="Vision Model Deployment"
-                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE]"
+                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE] text-[16px] data-[state=active]:text-[16px]"
                 >
                   Vision Model Deployment
                 </TabsTrigger>
                 <TabsTrigger
                   value="Text Annotations"
-                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE]"
+                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE] text-[16px] data-[state=active]:text-[16px]"
                 >
                   Text Annotations
                 </TabsTrigger>
                 <TabsTrigger
                   value="LLM Fine Tuning"
-                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE]"
+                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE] text-[16px] data-[state=active]:text-[16px]"
                 >
                   LLM Fine Tuning
                 </TabsTrigger>
                 <TabsTrigger
                   value="LLM Deployment"
-                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE]"
+                  className="w-full text-black data-[state=active]:text-[#4C00FE] relative data-[state=active]:shadow-none shadow-none border-t-0 border-l-0 border-r-0 border-b-2 border-[#DBDADD] rounded-none data-[state=active]:bg-transparent data-[state=active]:border-b-0 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-transparent after:bottom-0 after:left-0 data-[state=active]:after:bg-gradient-to-r data-[state=active]:after:from-[#E400A0] data-[state=active]:after:to-[#4C00FE] text-[16px] data-[state=active]:text-[16px]"
                 >
                   LLM Deployment
                 </TabsTrigger>
