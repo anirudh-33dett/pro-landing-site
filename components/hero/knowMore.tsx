@@ -41,7 +41,7 @@ const secondaryArticles = [
 const KnowMore = () => {
   return (
     <div className="py-10 bg-white">
-      <div className="mx-27">
+      <div className="mx-35">
         {/* ActualTitle */}
         <div className="mb-4">
           <p className="text-[16px] text-primary font-bold">OUR ACHIEVEMENTS</p>

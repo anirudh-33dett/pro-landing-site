@@ -61,7 +61,7 @@ export function Navbar() {
       </div>
       <div>
         <Menu setActive={setActive}>
-          <StandardItem title={"Home"} href={"/home"}></StandardItem>
+          <StandardItem title={"Home"} href={"/"}></StandardItem>
           <div className="flex flex-row space-x-1">
             <MenuItem setActive={setActive} active={active} item="Features">
               <div className="pt-1 pb-4">
@@ -111,7 +111,8 @@ export function Navbar() {
                     {leftColumnIndustries.map((industry) => (
                       <HoveredLink
                         key={industry.title}
-                        href={`/solution/${industry.title}`}
+                        // href={`/solution/${industry.title}`}
+                        href="/under-construction"
                       >
                         {industry.title}
                       </HoveredLink>
@@ -121,7 +122,8 @@ export function Navbar() {
                     {rightColumnIndustries.map((industry) => (
                       <HoveredLink
                         key={industry.title}
-                        href={`/solution/${industry.title}`}
+                        // href={`/solution/${industry.title}`}
+                        href="/under-construction"
                       >
                         {industry.title}
                       </HoveredLink>
@@ -158,14 +160,22 @@ export function Navbar() {
             </div>
           </div>
           <StandardItem title={"Pricing"} href={"/pricing"}></StandardItem>
-          <StandardItem title={"Contact"} href={"/contact"}></StandardItem>
+          <StandardItem title={"Contact"} href={"/contact-us"}></StandardItem>
         </Menu>
       </div>
       <div className="space-x-4 my-auto">
-        <Button className="shadow-none bg-white rounded-full text-[#4c00fe] border border-white hover:bg-[#4c00fe] hover:text-white">
+        <Button
+          className="shadow-none bg-white rounded-full text-[#4c00fe] border border-white hover:bg-[#4c00fe] hover:text-white"
+          onClick={() => (window.location.href = "/contactus")}
+        >
           Book Demo
         </Button>
-        <Button className="rounded-full shadow-none bg-[#4c00fe] text-white border border-[#4c00fe] hover:text-[#4c00fe] hover:bg-white ">
+        <Button
+          className="rounded-full shadow-none bg-[#4c00fe] text-white border border-[#4c00fe] hover:text-[#4c00fe] hover:bg-white"
+          onClick={() =>
+            (window.location.href = "https://app.qpiai-pro.tech/register")
+          }
+        >
           Get Started
         </Button>
       </div>

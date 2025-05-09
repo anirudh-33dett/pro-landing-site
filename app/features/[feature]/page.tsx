@@ -32,9 +32,10 @@ export default function FeaturePage({ params }: FeaturePageProps) {
 
   return (
     <div className="bg-[#F4F8FF] min-h-screen">
-      <div className="container mx-auto px-4">
+      <div>
         <FeaturesHero
-          title={displayTitle}
+          buttonTitle={displayTitle}
+          title={featureData.title}
           description={featureData.description}
           youtubeUrl={featureData.youtubeUrl}
         />

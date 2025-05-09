@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Tabs, TabsTrigger, TabsContent, TabsList } from "../ui/tabs";
 import { Button } from "../ui/button";
@@ -19,114 +21,117 @@ const featureHighlightData = [
     description:
       "Use class descriptions as prompts for generating Automated Annotations across detection and segmentation tasks.",
     point1: [
-      "700X Faster: ",
-      "Auto-generate annotatoins using simple class descriptions",
+      "• 700X Faster: ",
+      "• Auto-generate annotatoins using simple class descriptions",
     ],
-    point2: ["Zero Expertise Needed: ", "Natural language prompts"],
-    point3: ["Scalable: ", "Ideal for massive datasets"],
+    point2: ["• Zero Expertise Needed: ", "Natural language prompts"],
+    point3: ["• Scalable: ", "Ideal for massive datasets"],
     point4: [
-      "Consistent & Cost-Effective: ",
+      "• Consistent & Cost-Effective: ",
       "Uniform annotations with reduced human bias.",
     ],
-    imageUrl: "",
+    imageUrl: "/features/automatedannotation.png",
   },
   {
     title: "Few Shot Visual Prompting",
     description:
       "Leverage our proprietary Gen AI-driven methods to annotate images at the cluster level, utilizing image embeddings to enhance the accuracy of specialized dataset annotations. ",
     point1: [
-      "300X Faster: ",
+      "• 300X Faster: ",
       "Drastically reduce manual labeling time even for niche datasets.",
     ],
     point2: [
-      "Cluster Based Annotation: ",
+      "• Cluster Based Annotation: ",
       "Annotate a few images, apply across entire clusters.",
     ],
     point3: [
-      "High Accuracy: ",
+      "• High Accuracy: ",
       "Fine-tune edge cases with optional manual review",
     ],
     point4: [
-      "Best for Complex Datasets: ",
+      "• Best for Complex Datasets: ",
       "Adaptable to medical, automotive, and geospatial data.",
     ],
-    imageUrl: "",
+    imageUrl: "/features/FewShot.png",
   },
   {
     title: "Vision Model Deployment",
     description:
       "QpiAI Pro offers a unified no-code pipeline to develop and deploy vision models—from fine-tuning pre-trained models to real-time, scalable inference with live monitoring and one-click integration",
     point1: [
-      "Maximize Value with 20x RoI: ",
+      "• Maximize Value with 20x RoI: ",
       "Achieve up to 20x better return on every dollar spent through optimized credit consumption during model training.",
     ],
     point2: [
-      "Unified Vision AI Workflow: ",
+      "• Unified Vision AI Workflow: ",
       " Effortlessly Build, train, and deploy detection and segmentation models.",
     ],
     point3: [
-      "Scalable Training & Inference: ",
+      "• Scalable Training & Inference: ",
       "Support multi-node training and real-time, low-latency deployment across CPU/GPU environments with dynamic scaling.",
     ],
     point4: [
-      "Seamless Integration & Monitoring: ",
+      "• Seamless Integration & Monitoring: ",
       "Instantly deploy with auto-generated endpoints and monitor live performance metrics through built-in dashboards.",
     ],
-    imageUrl: "",
+    imageUrl: "/features/visionmodel.webp",
   },
   {
     title: "Text Annotations",
     description:
       "Built for teams, researchers, and organizations focused on developing domain-aligned, high-quality LLMs, QpiAI Pro ensures clarity, consistency, and collaboration at every stage.",
     point1: [
-      "Manual Precision:: ",
+      "• Manual Precision:: ",
       "Build high-quality text datasets from scratch or uploads.",
     ],
     point2: [
-      "Tailored for LLMs: ",
+      "• Tailored for LLMs: ",
       "Perfect for instruction tuning and ranking tasks.",
     ],
     point3: [
-      "Collaboration-Ready: ",
+      "• Collaboration-Ready: ",
       "Multi-user workflows with version control and QA.",
     ],
-    point4: ["No-Code Simplicity: ", "Focus on content, not tooling."],
-    imageUrl: "",
+    point4: ["• No-Code Simplicity: ", "Focus on content, not tooling."],
+    imageUrl: "/features/textannotation.jpg",
   },
   {
     title: "LLM Fine Tuning",
     description:
       "QpiAI Pro brings no-code LLM fine-tuning to your fingertips—adapt models for specific business needs through easy instruction (SFT) and preference tuning (DPO) with minimal setup or technical expertise.",
     point1: [
-      "Affordable at Scale: ",
+      "• Affordable at Scale: ",
       " Flat per-job pricing up to 95% cheaper than leading platforms.",
     ],
-    point2: ["Zero DevOps: ", "Tune LLMs using no-code SFT and DPO workflows."],
+    point2: [
+      "• Zero DevOps: ",
+      "Tune LLMs using no-code SFT and DPO workflows.",
+    ],
     point3: [
-      "AutoML Optimized: ",
+      "• AutoML Optimized: ",
       "Smart hyperparameters and resource scheduling.",
     ],
     point4: [
-      "Live Metrics: ",
+      "• Live Metrics: ",
       "Visualize loss curves, training logs, and evaluations",
     ],
-    imageUrl: "",
+    imageUrl: "/features/finetuning.webp",
   },
   {
     title: "LLM Model Deployment",
     description:
       "Deploy LLMs at scale with QpiAI Pro—flexible CPU/GPU support, built in Quantization, auto-scaling, and real-time monitoring for instant, production-grade inference anywhere.",
     point1: [
-      "Flexible Infrastructure Choices: ",
+      "• Flexible Infrastructure Choices: ",
       "Deploy seamlessly on CPUs or GPUs, optimizing for both cost-efficiency and low-latency performance.",
     ],
-    point2: ["Zero Expertise Needed: ", "Natural language prompts"],
-    point3: ["Scalable: ", "Ideal for massive datasets"],
+    point2: ["• Zero Expertise Needed: ", "Natural language prompts"],
+    point3: ["• Scalable: ", "Ideal for massive datasets"],
     point4: [
-      "Consistent & Cost-Effective: ",
+      "• Consistent & Cost-Effective: ",
       "Uniform annotations with reduced human bias.",
     ],
-    imageUrl: "",
+    imageUrl: "/features/llmdeploy.png",
   },
 ];
 
@@ -140,10 +145,10 @@ const FeatureHighlightContent = ({
   imageUrl,
 }: any) => {
   return (
-    <div className="w-full h-auto p-4 md:p-8 font-sans">
+    <div className="w-full h-auto p-0 font-sans">
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Content div - adjust height to match image */}
-        <div className="w-full h-auto lg:h-[452px] bg-transparent p-6 rounded-lg flex flex-col overflow-hidden">
+        <div className="w-full h-auto lg:h-[452px] bg-transparent p-0 rounded-lg flex flex-col overflow-hidden">
           <div className="mb-6">
             <h1 className="text-3xl font-bold mb-3 text-gray-800">{title}</h1>
             <p className="mt-2 text-gray-600 text-base">{description}</p>
@@ -187,7 +192,7 @@ const FeatureHighlightContent = ({
             <img
               src={imageUrl}
               alt={title || "Feature image"}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-scale-down "
               onError={(e) =>
                 (e.currentTarget.src =
                   "https://placehold.co/560x452/e2e8f0/a0aec0?text=Image+Not+Found")
@@ -220,8 +225,8 @@ const FeatureHighlights = () => {
 
   return (
     <div className="bg-[#F4F8FF] h-full w-full">
-      <div className="px-6 md:px-10 lg:px-12 py-10 space-y-6">
-        <div className="mx-27">
+      <div className="px-6 md:px-10 lg:px-12 py-10 space-y-6 max-w-full mx-25">
+        <div className="">
           <div className="mb-4">
             <p className="text-[16px] text-primary font-bold">
               GAME CHANGING FEATURES
@@ -290,7 +295,7 @@ const FeatureHighlights = () => {
               {/* TabContent for Automated Annotations */}
               <TabsContent
                 value="Automated Annotations"
-                className="bg-transparent border-none shadow-none h-full w-full"
+                className="bg-transparent border-none shadow-none w-full p-0 pt-5"
               >
                 {(() => {
                   const data = getFeatureDataByTitle("Automated Annotations");
@@ -310,7 +315,7 @@ const FeatureHighlights = () => {
               {/* TabContent for Few Shot Visual Prompting */}
               <TabsContent
                 value="Few Shot Visual Prompting"
-                className="bg-transparent border-none shadow-none"
+                className="bg-transparent border-none shadow-none w-full p-0 pt-5"
               >
                 {(() => {
                   const data = getFeatureDataByTitle(
@@ -332,7 +337,7 @@ const FeatureHighlights = () => {
               {/* TabContent for Vision Model Deployment */}
               <TabsContent
                 value="Vision Model Deployment"
-                className="bg-transparent border-none shadow-none"
+                className="bg-transparent border-none shadow-none w-full p-0 pt-5"
               >
                 {(() => {
                   const data = getFeatureDataByTitle("Vision Model Deployment");
@@ -352,7 +357,7 @@ const FeatureHighlights = () => {
               {/* TabContent for Text Annotations */}
               <TabsContent
                 value="Text Annotations"
-                className="bg-transparent border-none shadow-none"
+                className="bg-transparent border-none shadow-none w-full p-0 pt-5"
               >
                 {(() => {
                   const data = getFeatureDataByTitle("Text Annotations");
@@ -372,7 +377,7 @@ const FeatureHighlights = () => {
               {/* TabContent for LLM Fine Tuning */}
               <TabsContent
                 value="LLM Fine Tuning"
-                className="bg-transparent border-none shadow-none"
+                className="bg-transparent border-none shadow-none w-full p-0 pt-5"
               >
                 {(() => {
                   const data = getFeatureDataByTitle("LLM Fine Tuning");
@@ -392,7 +397,7 @@ const FeatureHighlights = () => {
               {/* TabContent for LLM Deployment (matching to LLM Model Deployment) */}
               <TabsContent
                 value="LLM Deployment"
-                className="bg-transparent border-none shadow-none"
+                className="bg-transparent border-none shadow-none w-full p-0 pt-[64px]"
               >
                 {(() => {
                   const data = getFeatureDataByTitle("LLM Deployment");

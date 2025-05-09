@@ -1,14 +1,14 @@
-import { ResourcesTabBar } from "@/components/ResourcesTabBar"
+import { ResourcesTabBar } from "@/components/ResourcesTabBar";
 
 export default function ResourcesLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode
+  children: React.ReactNode;
 }) {
-    return (
-        <div className="container mx-5 py-8">
-            <ResourcesTabBar />
-            {children}
-        </div>
-    )
+  return (
+    <div className="px-25 py-8 bg-[#F4F8FF]">
+      <ResourcesTabBar />
+      {children}
+    </div>
+  );
 }

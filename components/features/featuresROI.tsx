@@ -31,7 +31,9 @@ const ROICard = ({
       </div>
       <div className="mt-2">
         <span className="text-white font-medium text-lg">{label}</span>
-        {description && <span className="text-white/90 text-lg"> {description}</span>}
+        {description && (
+          <span className="text-white/90 text-lg"> {description}</span>
+        )}
       </div>
     </div>
   );
@@ -39,23 +41,26 @@ const ROICard = ({
 
 const FeaturesROI = ({ numbers }: FeaturesROIProps) => {
   return (
-    <div className="max-w-[1120px] mx-auto relative mb-20">
+    <div className="relative mb-20">
       <div
-        className="w-full p-10 rounded-2xl relative overflow-hidden"
+        className="w-full p-10 relative overflow-hidden flex items-center justify-center"
         style={{
-          background: "radial-gradient(circle at center, #7033FE, #C9B3FF)",
+          background:
+            "radial-gradient(circle at center, #7033FEB3, #C9B3FFB3 )",
           backdropFilter: "blur(10px)",
           boxShadow: "0 8px 32px rgba(0, 0, 0, 0.1)",
         }}
       >
         <div className="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
-        <div className="relative z-10 flex flex-row justify-between">
+        <div className="relative z-10 flex flex-row justify-between w-full">
           {numbers.map((roi, index) => (
             <ROICard
               key={index}
               number={roi.value}
               label={roi.label}
-              className={index < numbers.length - 1 ? "border-r border-white/20" : ""}
+              className={
+                index < numbers.length - 1 ? "border-r border-white/20" : ""
+              }
             />
           ))}
         </div>

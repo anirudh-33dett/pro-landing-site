@@ -28,7 +28,7 @@ interface FeatureDetails {
 const FeatureContent: { [key: string]: FeatureDetails[] } = {
   "automated-annotation": [
     {
-      title: "Advantages of Automated Annotations",
+      title: "Lorem ipsum dolor sit amet consectetur. Integer augue.",
       description:
         "Leverage our Gen AI powered text prompting—converting natural language into accurate labels for detection and segmentation tasks. Combining automation with human validation, it delivers faster and more reliable results than manual methods. Best suited for common objects in general contexts.",
       youtubeUrl:
@@ -46,19 +46,22 @@ const FeatureContent: { [key: string]: FeatureDetails[] } = {
           heading: "Speed & Efficiency",
           description:
             "Significantly reduce annotation time compared to manual methods, accelerating your project timelines.",
-          imageUrl: "https://placehold.co/400x300/E0E0E0/333333?text=Speed+Icon",
+          imageUrl:
+            "https://placehold.co/400x300/E0E0E0/333333?text=Speed+Icon",
         },
         {
           heading: "Consistency",
           description:
             "AI-driven annotations ensure higher consistency across large datasets, minimizing human error and bias.",
-          imageUrl: "https://placehold.co/400x300/D0D0D0/333333?text=Consistency+Icon",
+          imageUrl:
+            "https://placehold.co/400x300/D0D0D0/333333?text=Consistency+Icon",
         },
         {
           heading: "Scalability",
           description:
             "Easily scale your annotation efforts for enterprise-level projects without proportional increases in manual labor.",
-          imageUrl: "https://placehold.co/400x300/C0C0C0/333333?text=Scalability+Icon",
+          imageUrl:
+            "https://placehold.co/400x300/C0C0C0/333333?text=Scalability+Icon",
         },
         {
           heading: "Ease of Use",
@@ -76,7 +79,8 @@ const FeatureContent: { [key: string]: FeatureDetails[] } = {
           heading: "Human-in-the-Loop",
           description:
             "Combine AI speed with human validation for optimal accuracy and reliability, especially for complex cases.",
-          imageUrl: "https://placehold.co/400x300/909090/333333?text=Validation+Icon",
+          imageUrl:
+            "https://placehold.co/400x300/909090/333333?text=Validation+Icon",
         },
       ],
       tableContent: {
@@ -133,31 +137,40 @@ const FeatureContent: { [key: string]: FeatureDetails[] } = {
           heading: "Minimal Data Requirements",
           description:
             "Train effective models with just a handful of examples, dramatically reducing data collection needs.",
-          imageUrl: "https://placehold.co/400x300/E0E0E0/333333?text=Minimal+Data",
+          imageUrl:
+            "https://placehold.co/400x300/E0E0E0/333333?text=Minimal+Data",
         },
         {
           heading: "Rapid Adaptation",
-          description: "Quickly adapt models to new scenarios with just a few visual examples.",
-          imageUrl: "https://placehold.co/400x300/D0D0D0/333333?text=Rapid+Adaptation",
+          description:
+            "Quickly adapt models to new scenarios with just a few visual examples.",
+          imageUrl:
+            "https://placehold.co/400x300/D0D0D0/333333?text=Rapid+Adaptation",
         },
         {
           heading: "Domain Flexibility",
-          description: "Easily transfer learning across different domains and use cases.",
-          imageUrl: "https://placehold.co/400x300/C0C0C0/333333?text=Domain+Flex",
+          description:
+            "Easily transfer learning across different domains and use cases.",
+          imageUrl:
+            "https://placehold.co/400x300/C0C0C0/333333?text=Domain+Flex",
         },
         {
           heading: "Interactive Learning",
-          description: "Intuitive interface for providing visual examples and fine-tuning models.",
-          imageUrl: "https://placehold.co/400x300/B0B0B0/333333?text=Interactive",
+          description:
+            "Intuitive interface for providing visual examples and fine-tuning models.",
+          imageUrl:
+            "https://placehold.co/400x300/B0B0B0/333333?text=Interactive",
         },
         {
           heading: "Resource Efficient",
-          description: "Minimize computational resources needed for training and adaptation.",
+          description:
+            "Minimize computational resources needed for training and adaptation.",
           imageUrl: "https://placehold.co/400x300/A0A0A0/333333?text=Resource",
         },
         {
           heading: "Iterative Improvement",
-          description: "Continuously improve model performance with additional examples as needed.",
+          description:
+            "Continuously improve model performance with additional examples as needed.",
           imageUrl: "https://placehold.co/400x300/909090/333333?text=Iterative",
         },
       ],
@@ -183,7 +196,7 @@ const FeatureContent: { [key: string]: FeatureDetails[] } = {
           "Requires extensive data",
         ],
         column3: [
-          "Few-Shot Learning",
+          "Fewshot Annotation",
           "Hours to days",
           "Visual example-based",
           "Consistent with few examples",
@@ -221,7 +234,8 @@ const FeatureContent: { [key: string]: FeatureDetails[] } = {
           heading: "Auto-Scaling",
           description:
             "Automatically scale resources based on demand for optimal performance and cost.",
-          imageUrl: "https://placehold.co/400x300/D0D0D0/333333?text=Auto+Scale",
+          imageUrl:
+            "https://placehold.co/400x300/D0D0D0/333333?text=Auto+Scale",
         },
         {
           heading: "Performance Monitoring",
@@ -231,17 +245,20 @@ const FeatureContent: { [key: string]: FeatureDetails[] } = {
         },
         {
           heading: "Version Control",
-          description: "Track and manage different model versions with easy rollback capabilities.",
+          description:
+            "Track and manage different model versions with easy rollback capabilities.",
           imageUrl: "https://placehold.co/400x300/B0B0B0/333333?text=Version",
         },
         {
           heading: "Security Compliance",
-          description: "Enterprise-grade security with data encryption and access controls.",
+          description:
+            "Enterprise-grade security with data encryption and access controls.",
           imageUrl: "https://placehold.co/400x300/A0A0A0/333333?text=Security",
         },
         {
           heading: "API Integration",
-          description: "Easy integration with existing systems through RESTful APIs.",
+          description:
+            "Easy integration with existing systems through RESTful APIs.",
           imageUrl: "https://placehold.co/400x300/909090/333333?text=API",
         },
       ],
@@ -297,8 +314,10 @@ const FeatureContent: { [key: string]: FeatureDetails[] } = {
       detailedFeatures: [
         {
           heading: "Smart Automation",
-          description: "AI-powered suggestions and automated pre-labeling for faster annotation.",
-          imageUrl: "https://placehold.co/400x300/E0E0E0/333333?text=Smart+Auto",
+          description:
+            "AI-powered suggestions and automated pre-labeling for faster annotation.",
+          imageUrl:
+            "https://placehold.co/400x300/E0E0E0/333333?text=Smart+Auto",
         },
         {
           heading: "Quality Control",
@@ -308,22 +327,26 @@ const FeatureContent: { [key: string]: FeatureDetails[] } = {
         },
         {
           heading: "Collaboration Tools",
-          description: "Team-based annotation with role management and progress tracking.",
+          description:
+            "Team-based annotation with role management and progress tracking.",
           imageUrl: "https://placehold.co/400x300/C0C0C0/333333?text=Collab",
         },
         {
           heading: "Custom Templates",
-          description: "Create and save annotation templates for different use cases.",
+          description:
+            "Create and save annotation templates for different use cases.",
           imageUrl: "https://placehold.co/400x300/B0B0B0/333333?text=Templates",
         },
         {
           heading: "Analytics Dashboard",
-          description: "Comprehensive analytics for tracking annotation progress and quality.",
+          description:
+            "Comprehensive analytics for tracking annotation progress and quality.",
           imageUrl: "https://placehold.co/400x300/A0A0A0/333333?text=Analytics",
         },
         {
           heading: "Export Options",
-          description: "Flexible export formats supporting major ML frameworks and tools.",
+          description:
+            "Flexible export formats supporting major ML frameworks and tools.",
           imageUrl: "https://placehold.co/400x300/909090/333333?text=Export",
         },
       ],
@@ -379,33 +402,40 @@ const FeatureContent: { [key: string]: FeatureDetails[] } = {
       detailedFeatures: [
         {
           heading: "Efficient Training",
-          description: "Optimized training pipelines for faster model adaptation and convergence.",
+          description:
+            "Optimized training pipelines for faster model adaptation and convergence.",
           imageUrl: "https://placehold.co/400x300/E0E0E0/333333?text=Training",
         },
         {
           heading: "Data Management",
-          description: "Comprehensive tools for dataset preparation and quality control.",
+          description:
+            "Comprehensive tools for dataset preparation and quality control.",
           imageUrl: "https://placehold.co/400x300/D0D0D0/333333?text=Data+Mgmt",
         },
         {
           heading: "Performance Metrics",
-          description: "Detailed analytics and evaluation metrics for model performance.",
+          description:
+            "Detailed analytics and evaluation metrics for model performance.",
           imageUrl: "https://placehold.co/400x300/C0C0C0/333333?text=Metrics",
         },
         {
           heading: "Resource Optimization",
-          description: "Smart resource allocation for cost-effective model training.",
+          description:
+            "Smart resource allocation for cost-effective model training.",
           imageUrl: "https://placehold.co/400x300/B0B0B0/333333?text=Resource",
         },
         {
           heading: "Model Versioning",
-          description: "Track and manage different versions of fine-tuned models.",
+          description:
+            "Track and manage different versions of fine-tuned models.",
           imageUrl: "https://placehold.co/400x300/A0A0A0/333333?text=Version",
         },
         {
           heading: "Integration Ready",
-          description: "Easy deployment and integration of fine-tuned models into production.",
-          imageUrl: "https://placehold.co/400x300/909090/333333?text=Integration",
+          description:
+            "Easy deployment and integration of fine-tuned models into production.",
+          imageUrl:
+            "https://placehold.co/400x300/909090/333333?text=Integration",
         },
       ],
       tableContent: {
@@ -460,32 +490,38 @@ const FeatureContent: { [key: string]: FeatureDetails[] } = {
       detailedFeatures: [
         {
           heading: "Rapid Deployment",
-          description: "Deploy LLMs to production environments with automated optimization.",
+          description:
+            "Deploy LLMs to production environments with automated optimization.",
           imageUrl: "https://placehold.co/400x300/E0E0E0/333333?text=Deploy",
         },
         {
           heading: "Smart Scaling",
-          description: "Automatic resource scaling based on demand and usage patterns.",
+          description:
+            "Automatic resource scaling based on demand and usage patterns.",
           imageUrl: "https://placehold.co/400x300/D0D0D0/333333?text=Scale",
         },
         {
           heading: "Performance Tracking",
-          description: "Comprehensive monitoring of model performance and system health.",
+          description:
+            "Comprehensive monitoring of model performance and system health.",
           imageUrl: "https://placehold.co/400x300/C0C0C0/333333?text=Track",
         },
         {
           heading: "Cost Management",
-          description: "Optimize resource utilization and control operational costs.",
+          description:
+            "Optimize resource utilization and control operational costs.",
           imageUrl: "https://placehold.co/400x300/B0B0B0/333333?text=Cost",
         },
         {
           heading: "Security Features",
-          description: "Enterprise-grade security with encryption and access controls.",
+          description:
+            "Enterprise-grade security with encryption and access controls.",
           imageUrl: "https://placehold.co/400x300/A0A0A0/333333?text=Security",
         },
         {
           heading: "API Management",
-          description: "Comprehensive API management with versioning and documentation.",
+          description:
+            "Comprehensive API management with versioning and documentation.",
           imageUrl: "https://placehold.co/400x300/909090/333333?text=API",
         },
       ],

@@ -97,7 +97,7 @@ const IndustryApplicationHighlights = () => {
     <div
       className="w-full pt-25 px-25 pb-5"
       style={{
-        background: "radial-gradient(circle at center, #7033FE, #C9B3FF )",
+        background: "radial-gradient(circle at center, #7033FEB3, #C9B3FFB3 )",
         backdropFilter: "blur(10px)",
         boxShadow: "0 8px 32px rgba(0, 0, 0, 0.1)",
       }}

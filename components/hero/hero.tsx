@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Button } from "../ui/button";
 
@@ -21,10 +23,18 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
-          <Button className="bg-[#4c00fe] hover:bg-white border hover:border hover:border-[#4c00fe] hover:text-[#4c00fe] rounded-full py-4 px-5 h-[45px] text-[16px]">
+          <Button
+            className="bg-[#4c00fe] hover:bg-white border hover:border hover:border-[#4c00fe] hover:text-[#4c00fe] rounded-full py-4 px-5 h-[45px] text-[16px]"
+            onClick={() => (window.location.href = "/contactus")}
+          >
             Contact for Enterprise Version
           </Button>
-          <Button className="bg-transparent text-[#4c00fe] shadow-none border border-transparent rounded-full hover:text-white hover:border hover:border-[#4c00fe] hover:bg-[#4c00fe] h-[45px] text-[16px]">
+          <Button
+            className="bg-transparent text-[#4c00fe] shadow-none border border-transparent rounded-full hover:text-white hover:border hover:border-[#4c00fe] hover:bg-[#4c00fe] h-[45px] text-[16px]"
+            onClick={() =>
+              (window.location.href = "https://app.qpiai-pro.tech/register")
+            }
+          >
             Start free trial
           </Button>
         </div>

@@ -1,5 +1,4 @@
 import CTA from "@/components/cta";
-import AdvantageHighlights from "@/components/hero/advantageHighlights";
 import FeatureHighlights from "@/components/hero/featureHighlights";
 import Hero from "@/components/hero/hero";
 import IndustryApplicationHighlights from "@/components/hero/industryApplicationHighlights";
@@ -15,8 +14,8 @@ export default function Home() {
       <Hero />
       <ProductHighlights />
       {/* <AdvantageHighlights></AdvantageHighlights> */}
-      <ROI />
       <FeatureHighlights />
+      <ROI />
       <PlatformHighlights />
       <IndustryApplicationHighlights />
       <KnowMore />

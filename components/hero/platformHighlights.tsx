@@ -38,7 +38,7 @@ const PlatformHighlights = () => {
 
   return (
     <div className="bg-[#F4F8FF] px-6 md:px-10 lg:px-12 py-10">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-27 max-w-full">
         <div className="pb-10">
           <p className="text-[16px] text-primary font-bold">
             DEPLOYMENT OPTIONS
@@ -78,7 +78,7 @@ const PlatformHighlights = () => {
                   <div className="flex justify-center gap-4 mb-6">
                     {option.features.map((feature, idx) => (
                       <div key={idx} className="flex flex-col items-center">
-                        <div className="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center">
+                        <div className="w-14 h-14 rounded-lg flex items-center justify-center">
                           <img
                             src={feature.icon}
                             alt="Cloud provider"
